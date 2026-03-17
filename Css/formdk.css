@@ -1,0 +1,28 @@
+#khungtrang {
+  background: linear-gradient(45deg, #e3f2fd, #f8f9fa, #fff8e1);
+}
+.banner {
+  background: linear-gradient(to right, #e3f2fd, #f8f9fa);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
