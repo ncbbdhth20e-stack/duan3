@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script src="../Javascript/formdk.js"></script>
+    <link rel="stylesheet" href="../Css/formdk.css" />
+    <link rel="shortcut icon" href="../Img/logo2.png" type="image/x-icon" />
+    <title>Register</title>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <div id="khungtrang">
+      <nav class="navbar navbar-expand bg-success">
+        <ul class="navbar-nav">
+          <li class="nav-item m-2">
+            <a class="nav-link text-light" href="#">Trang chủ</a>
+          </li>
+          <li class="border-end"></li>
+          <li class="nav-item m-2">
+            <a class="nav-link text-light hover-" href="#">Đăng ký</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form id="registerForm">
+        <div
+          class="container text-center mt-5 border border-3 bg-body-tertiary b rounded-2 flex-column mb-5"
+          style="width: 550px"
+        >
+          <div class="h2 text-primary">Đăng ký</div>
+          <div class="row mb-2">
+            <div class="col-3">
+              <label for="" class="form-label me-4">Full Name:</label>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-12" style="width: 600px">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Họ và tên"
+                class="form-control"
+                onblur="ktten()"
+              />
+            </div>
+            <div class="col-1 mt-1 text-danger">
+              <span id="er1">*</span>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-2">
+              <label for="" class="form-label">Telephone: </label>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-12" style="width: 600px">
+              <input
+                type="tel"
+                id="telnumber"
+                name="telnumber"
+                placeholder="Số điện thoại"
+                class="form-control"
+                onblur="kttel()"
+              />
+            </div>
+          </div>
+          <div class="col-1 mt-1 text-danger">
+            <span class="me-4" id="er2">*</span>
+          </div>
+          <div class="row mb-2">
+            <div class="col-3">
+              <label for="" class="form-label me-2">Date of Birth:</label>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-12" style="width: 600px">
+              <input
+                type="date"
+                id="date"
+                name="date"
+                placeholder="Ngày tháng năm sinh"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-3">
+              <label for="" class="form-label">Email address:</label>
+            </div>
+          </div>
+          <div class="input-group mb-2">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              onblur="ktemail()"
+            />
+            <span class="input-group-text">@example.com</span>
+          </div>
+          <div class="col-1 mt-1 text-danger">
+            <span class="me-3" id="er3">*</span>
+          </div>
+          <div class="row mb-2">
+            <div class="col-2">
+              <label class="form-label ms-1" for="">Password:</label>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-12">
+              <input
+                id="pw"
+                name="pw"
+                type="password"
+                placeholder="Password"
+                class="form-control"
+                onblur="ktpassword()"
+              />
+            </div>
+          </div>
+          <div class="col-1 mt-1 text-danger">
+            <span class="me-3" id="er4">*</span>
+          </div>
+          <div class="col-4 form-check mb-3">
+            <label class="form-check-label" for="">
+              <input
+                id="paswod"
+                class="form-check-input"
+                onclick="showpassword()"
+                type="checkbox"
+              />Show Password
+            </label>
+          </div>
+          <div class="row mb-2">
+            <div class="col-12">
+              <div class="btn btn-primary" style="width: 500px">Lưu</div>
+            </div>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="marquee bg-success">
+            <span class="text-light"
+              >Chào mừng bạn đến với website của chúng tôi. Rất hân hạnh được
+              phục vụ bạn.</span
+            >
+          </div>
+        </div>
+        <footer class="bg-success text-light py-3 text-center">
+          <div class="container">
+            <p>Công ty trách nhiệm hữu hạn</p>
+          </div>
+        </footer>
+      </form>
+    </div>
+  </body>
+</html>
